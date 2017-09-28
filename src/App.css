@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'myFont';
+  src: url("font/DAGGERSQUARE_OBLIQUE.otf"); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #FFF;
+  font-family: 'myFont', sans-serif; }
+
+a {
+  color: #DA3F62;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+  font-size: 1rem; }
+  a:hover {
+    color: #e26a85; }
+
+.serif {
+  font-family: 'Lora', serif; }
+  .serif .game-letter {
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-weight: 400; }
+
+.main-header {
+  font-size: 20em; }
+
+.main-background {
+  background: white; }
+
+.progress-bar1 {
+  height: 25vh;
+  margin-left: -20px;
+  width: 100%;
+  vertical-align: middle; }
+
+.progress-fill1 {
+  height: 100%;
+  text-align: left; }
+
+.progress-bar2 {
+  height: 25vh;
+  margin-left: -20px;
+  width: 100%;
+  vertical-align: middle; }
+
+.progress-fill2 {
+  height: 100%;
+  text-align: left; }
+
+.progress-bar3 {
+  height: 25vh;
+  margin-left: -20px;
+  width: 100%;
+  vertical-align: middle; }
+
+.progress-fill3 {
+  height: 100%;
+  text-align: left; }
+
+.progress-bar4 {
+  height: 25vh;
+  margin-left: -20px;
+  width: 100%;
+  vertical-align: middle; }
+
+.progress-fill4 {
+  height: 100%;
+  text-align: left; }
+
+.progress-bar-name {
+  font-size: 3rem;
+  color: white;
+  float: left;
+  white-space: nowrap; }
+
+.progress-bar-name2 {
+  font-size: 3rem;
+  color: white;
+  float: left;
+  white-space: nowrap; }
+
+.game {
+  margin: 0 auto;
+  width: 102%;
+  height: 100vh;
+  margin-left: -12px;
+  position: absolute;
+  overflow: hidden; }
+  .game__board {
+    background: #FD6830;
+    margin-top: -30px;
+    height: 130vh;
+    position: relative;
+    top: 0;
+    right: 0; }
+  .game__score {
+    position: relative;
+    top: 40px;
+    left: 0;
+    font-size: 1rem;
+    text-align: center; }
+  .game__timer {
+    position: relative;
+    top: 50vh;
+    font-size: 3rem;
+    text-align: center; }
+  .game__words {
+    position: relative;
+    top: 180px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #59646C; }
+    .game__words p {
+      font-size: 1rem; }
+
+.emoji {
+  font-family: Arial, Helvetica, sans;
+  margin-left: 10px;
+  font-size: 2rem;
+  vertical-align: middle; }
+
+.game-letter {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 700; }
+  .game-letter[data-correct="true"] {
+    color: #DA3F62; }
+  .game-letter[data-correct="false"] {
+    background: #F3B61F; }
+  @media screen and (min-width: 768px) {
+    .game-letter {
+      font-size: 4rem; } }
+
+p {
+  font-size: 1.4rem;
+  text-align: center; }
+
+.button {
+  background: white;
+  border: 2px solid #FFF;
+  color: #FD6830;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 40px 80px;
+  transform: skew(-23deg);
+  transition: all 400ms ease-in-out; }
+  .button:hover {
+    border: 2px solid #DA3F62; }
+
+button:focus {
+  background-color: white;
+  color: #59646c; }
+
+.andrew:focus {
+  background-color: #fff83b;
+  color: white; }
+
+.bhavesh:focus {
+  background-color: #32fec0;
+  color: white; }
+
+.joe:focus {
+  background-color: #fd6fec;
+  color: white; }
+
+.harjit:focus {
+  background-color: #35e5Fd;
+  color: white; }
+
+.all-buttons {
+  margin-top: 100px; }
+
+.secret-input {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  opacity: 0; }
+
+.fade-enter {
+  opacity: .01; }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in-out; }
+
+.fade-leave {
+  opacity: 1; }
+
+.fade-leave.fade-leave-active {
+  opacity: .01;
+  transform: translateY(100px);
+  transition: all 500ms ease-in-out; }
+
+.scale-enter {
+  opacity: .01; }
+
+.scale-enter.scale-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in-out; }
+
+.scale-leave {
+  opacity: 1; }
+
+.scale-leave.scale-leave-active {
+  opacity: .01;
+  transform: scale(3) rotate(20deg);
+  tranform-origin: bottom;
+  transition: all 500ms ease-in-out; }
